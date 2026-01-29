@@ -4,13 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
+  plugins: [react(),
     tailwindcss(),
   ],
-  build: {
-    outDir: 'build',       // Vercel expects 'build'
-    assetsDir: 'assets',   // JS/CSS/images go here
-  },
-  base: './',               // ensures relative paths for SPA
 })
